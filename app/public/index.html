@@ -35,11 +35,22 @@
       <div id="mainContent" class="col">
         Registration Form
       </div>
-      <div class="col-md-4 queueView">
-        Queue View
+      <div id="patientWaitingApp" class="col-md-4 queueView">
+        Queue View<br>
+        {{ message }}
       </div>
-
     </div>
   </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script>
+    var app = new Vue({
+      el: '#patientWaitingApp',
+      data: {
+        message: 'Hello Spencer!'
+      }
+    })
+  </script>
+
 </body>
 </html>
